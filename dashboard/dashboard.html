@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="flex h-screen bg-gray-100 font-sans">
+    <div class="flex w-full">
+        
+        <div class="w-64 bg-gray-800 text-white flex flex-col">
+            
+            <h2 class="text-center text-4xl font-bold py-8">
+                <!-- <img class="h-16 w-16 mx-auto mb-4" src="/MedPal/client_Medpal/pixelcut-export.ico" alt="Your Company"> -->
+                <Span style="color: red;">Vaidhyatech</Span>AI</h2>
+            
+            <ul class="flex-1">
+                <li class="hover:bg-gray-700">
+                    <a href="#home" class="block text-center text-xl  py-5 px-3">Home</a>
+                </li>
+                <li class="hover:bg-blue-700">
+                    <a href="#appointments" class="block text-center text-xl  py-5 px-3">Appointments</a>
+                </li>
+                <li class="hover:bg-blue-700">
+                    <a href="#medication" class=" block text-center text-xl py-5 px-3">Medication</a>
+                </li>
+                <li class="hover:bg-blue-700">
+                    <a href="#medical-history" class="block text-center text-xl py-5 px-3">Medical Records</a>
+                </li>
+                <li class="hover:bg-blue-700">
+                    <a href="#settings" class="block text-center text-xl  py-5 px-3">Settings</a>
+                </li>
+                <li class="hover:bg-blue-700">
+                    <a href="" class="block text-center text-xl py-5 px-3" onclick="logout()">Logout</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Main Content -->
+        <div class="flex-1 p-6">
+            <div class="flex justify-between items-center bg-white p-4 shadow-md">
+                <h1 id="page-title" class="text-xl font-semibold text-gray-800">Welcome to the Dashboard</h1>
+                <div class="user-info text-gray-800">
+                    <span>Welcome, Devesh Kumar </span>
+                </div>
+            </div>
+
+            <div id="content-area" class="mt-6 p-4 bg-white rounded-lg shadow-md">
+                <p>Select a menu item to view content.</p>
+            </div>
+        </div>
+    </div>
+   
+
+    
+    <script src="dashboard.js"></script>
+</body>
+</html>

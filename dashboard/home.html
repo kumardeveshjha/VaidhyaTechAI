@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>Home</title>
+</head>
+<body class="bg-gray-100 p-6">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
+        <!-- Health Status Card -->
+        <div class="bg-white shadow-md rounded-lg p-6 transform hover:scale-105 transition duration-300"> 
+            <h2 class="text-xl font-bold text-gray-800 mb-4">Health Status</h2>
+            <p class="text-gray-800">Your current health status is stable. Keep up with your daily exercises and maintain a balanced diet.</p>
+            <div class="mt-4 flex items-center">
+                <span class="inline-block bg-green-100 text-green-800 text-sm font-medium px-2 py-1 rounded-full">Stable</span>
+                <button class="ml-4 px-3 py-1 bg-blue-500 hover:bg-blue-600 text-white text-sm rounded-md">View Details</button> 
+            </div>
+        </div>
+
+        <!-- Wearable Device Status Card -->
+        <div class="bg-white shadow-md rounded-lg p-6 transform hover:scale-105 transition duration-300">
+            <h2 class="text-xl font-bold text-gray-800 mb-4">Wearable Device Status</h2>
+            <p class="text-gray-600">Your wearable device is connected and functioning properly. Battery level is at 85%.</p>
+            <div class="mt-4">
+                <span class="inline-block bg-blue-100 text-blue-800 text-sm font-medium px-2 py-1 rounded-full">Connected</span>
+            </div>
+        </div>
+
+        <!-- Prescriptions Card -->
+        <div class="bg-white shadow-md rounded-lg p-6 transform hover:scale-105 transition duration-300">
+            <h2 class="text-xl font-bold text-gray-800 mb-4">Prescriptions</h2>
+            <p class="text-gray-600">You have 2 active prescriptions. Remember to take your medication on time.</p>
+            <div class="mt-4 flex items-center">
+                <span class="inline-block bg-yellow-100 text-yellow-800 text-sm font-medium px-2 py-1 rounded-full">2 Active</span>
+                <button class="ml-4 px-3 py-1 bg-blue-500 hover:bg-blue-600 text-white text-sm rounded-md">Manage Prescriptions</button> 
+            </div>
+        </div>
+    </div>
+</body>
+</html>

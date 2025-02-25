@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>appointments</title>
+</head>
+<body>
+    <h1 class="text-center text-2xl font-bold text-gray-800 mb-6">
+        Recent Appointments
+    </h1>
+    <div class="bg-white shadow-md rounded-lg overflow-x-auto"> 
+        <table class="w-full table-auto">
+            <thead class="bg-gray-100">
+                <tr>
+                    <th class="px-4 py-2 text-left">Doctor Name</th>
+                    <th class="px-4 py-2 text-left">Specialization</th>
+                    <th class="px-4 py-2 text-left">Date</th>
+                    <th class="px-4 py-2 text-left">Time</th>
+                    <th class="px-4 py-2 text-center">Actions</th> 
+                    <th class="px-4 py-2 text-center">Remark</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="border px-4 py-2">Dr. Devendra Shivanshi</td>
+                    <td class="border px-4 py-2">Nutritionist</td>
+                    <td class="border px-4 py-2">12/01/2025</td>
+                    <td class="border px-4 py-2">10:00 AM</td>
+                    <td class="border px-4 py-2 text-center">
+                        <input type="checkbox" class="form-checkbox h-5 w-5 text-green-600">
+                    </td>
+                    <td class="border px-4 py-2 text-center"> 
+                        <input type="text" class="remark-section">
+                    </td>
+                </tr>
+                <tr> 
+                    <td class="border px-4 py-2">Dr. Goswal</td>
+                    <td class="border px-4 py-2">Ayurveda</td>
+                    <td class="border px-4 py-2">25/01/2025</td>
+                    <td class="border px-4 py-2">01:00 PM</td> 
+                    <td class="border px-4 py-2 text-center">
+                        <input type="checkbox" class="form-checkbox h-5 w-5 text-green-600">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
