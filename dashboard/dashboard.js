@@ -42,6 +42,23 @@ document.addEventListener('DOMContentLoaded', () => {
       }
   }
 
+
+
+// Check for token on page load
+if (!localStorage.getItem('token')) {
+    window.location.href = 'login.html'; 
+}
+
+// Logout function
+function logout() {
+    localStorage.removeItem('token');
+    localStorage.removeItem('userId');
+    window.location.href = 'login.html'; 
+}
+
+
+
+
   window.addEventListener('hashchange', loadContent);
   loadContent(); // Load initial content
 });
