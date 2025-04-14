@@ -1,8 +1,8 @@
-import { Router } from 'express';
+import {Router}  from 'express';
 const router = Router();
-const User = require('../models/Users'); 
-const bcrypt = require('bcryptjs');
-const jwt = require('jsonwebtoken');
+import User from '../models/Users';
+import bcrypt from 'bcryptjs';
+import jwt from 'jsonwebtoken';
 
 // Ensure JWT_SECRET is defined
 if (!process.env.JWT_SECRET) {

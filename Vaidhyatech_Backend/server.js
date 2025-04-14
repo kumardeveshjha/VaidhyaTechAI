@@ -22,7 +22,7 @@ mongoose.connect(process.env.MONGODB_URI, {
 
 // Routes 
 
-import authRouter from './Routes/route.cjs';
+import authRouter from './Routes/route.js';
 app.use('/auth', authRouter); 
 
 
